@@ -1,0 +1,90 @@
+/* selector universal (*) */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Algoritmo de CSS */
+
+
+/* 1-La cascada
+
+2- La especofocodad
+
+3- La herencia
+*/
+
+
+/* 1-La cascada: es como el navegador interpreta los estilos siguiendo un orden especifico
+
+1- Estilos del user agent (estilos que le aplica el navegador)
+2-Estilos especificados por el desarrallador
+3-Niveles de especificidad de las reglas
+
+*/
+
+
+h1 {
+  color: red;
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+}
+
+
+h1 {
+  color: lemonchiffon;
+  transition: scale 0.3s;
+}
+
+h1:hover {
+  scale: 1.2;
+}
+
+li img {
+  width: 90%;
+  margin: 20px calc((100% - 90%)/2);
+}
+
+
+/* Especificidad - estilamos */
+
+
+ol {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+ol li {
+  color: aliceblue;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+li {
+  color: red;
+}
+
+li:nth-child(2) {
+  background-color: black;
+}
+
+ol .item2 {
+  background-color: lemonchiffon;
+  /* a igual especificidad prevalece la regla de la cascada */
+  color: black;
+}
+
+
+/* 3- Herencia */
+
+ol {
+  font-size: initial;
+  font-size: 20px;
+  border: inherit;
+  border: none;
+}
