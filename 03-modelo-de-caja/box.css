@@ -1,0 +1,74 @@
+/* Modelo de caja: es como ve cadad elemento HTML CSS */
+
+/* Contenido
+  padding
+  border
+  margin
+*/
+
+
+.standard-box {
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+
+  /* Margin */
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin: 10px 10px 10px 10px;
+  margin: 10px 10px;
+  margin: 10px;
+  margin: 0 auto;
+
+
+  /* border */
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+  border-left: 4px solid black;
+  border-color: red;
+  border-style: double;
+  border: 2px solid black;
+
+  /* padding */
+
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  padding: 10px 10px;
+
+  padding: 10px;
+  box-sizing: content-box;
+
+
+}
+
+.alternative-box {
+  width: 400px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 100px;
+
+}
+
+
+
+/* se recomienda con el selector universal usar  box-sizing: border-box; */
+
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+:root {}
